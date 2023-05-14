@@ -1,14 +1,14 @@
-import { AppRoute } from 'pwa-synergy-api'
+import { AppRoute } from 'pwa-synergy-api';
 
 const routes: AppRoute[] = [
   {
     index: true,
-    component: 'greetingEntry'
+    component: 'greetingEntry',
   },
   {
-    path: "message",
-    component: 'message'
+    path: 'message',
+    component: 'message',
   },
-]
+];
 
-export default routes
+export default routes;

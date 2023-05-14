@@ -1,15 +1,14 @@
-import React, { FC } from 'react'
-import Greeting from "../../types/Greeting"
-import '../../styles/message.scss'
+import React, { FC } from 'react';
+import Greeting from '../../types/Greeting';
+import '../../styles/message.scss';
 
 export interface MessageProps {
-  instanceId: string
-  greeting: Greeting
-  close: (instanceId: string) => void
+  instanceId: string;
+  greeting: Greeting;
+  close: (instanceId: string) => void;
 }
 
 const Message: FC<MessageProps> = ({ instanceId, greeting, close }) => {
-
   return (
     <div className="message">
       <div className="messageText">
@@ -21,7 +20,7 @@ const Message: FC<MessageProps> = ({ instanceId, greeting, close }) => {
         <button onClick={() => close(instanceId)}>Close</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Message
+export default Message;

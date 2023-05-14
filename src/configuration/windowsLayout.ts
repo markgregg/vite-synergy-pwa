@@ -1,4 +1,4 @@
-import { AppLayout } from 'pwa-synergy-api'
+import { AppLayout } from 'pwa-synergy-api';
 
 const windowsLayout: AppLayout = {
   panels: {
@@ -7,9 +7,9 @@ const windowsLayout: AppLayout = {
       {
         id: 'main',
         size: 600,
-        components: ['greetingEntry']
-      }
-    ]
+        components: ['greetingEntry'],
+      },
+    ],
   },
   componentGroups: [
     {
@@ -18,15 +18,15 @@ const windowsLayout: AppLayout = {
       newWindow: true,
       disableDock: true,
       preferredFloatHeight: [275, 275],
-      preferredFloatWidth: [352, 352]
+      preferredFloatWidth: [352, 352],
     },
     {
       id: 'dockableWindow',
       floatable: true,
       newWindow: true,
-      maximizable: true
-    }
-  ]
-}
+      maximizable: true,
+    },
+  ],
+};
 
-export default windowsLayout
+export default windowsLayout;

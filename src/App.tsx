@@ -1,30 +1,30 @@
-import React from 'react'
-import UniversalApp from 'pwa-synergy-api'
-import ApplicationCommands from './types/ApplicationCommands'
-import TitleBar from './components/TitleBar'
-import { components, routeCommands, windowsCommands, windowsLayout, routes } from './configuration'
-import './styles/app.scss'
+import React from 'react';
+import UniversalApp from 'pwa-synergy-api';
+import ApplicationCommands from './types/ApplicationCommands';
+import TitleBar from './components/TitleBar';
+import { components, routeCommands, windowsCommands, windowsLayout, routes } from './configuration';
+import './styles/app.scss';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <UniversalApp<ApplicationCommands>
-        appName='Universal Trader Desktop'
+        appName="Universal Trader Desktop"
         components={components}
         titleBar={() => <TitleBar />}
         desktopApp={{
           type: 'Window',
           commands: windowsCommands,
-          layout: windowsLayout
+          layout: windowsLayout,
         }}
         mobileApp={{
           type: 'Route',
           commands: routeCommands,
-          routes
+          routes,
         }}
       />
     </div>
   );
-}
+};
 
 export default App;

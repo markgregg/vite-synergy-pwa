@@ -1,11 +1,11 @@
-import '../../styles/titleBar.scss'
+import '../../styles/titleBar.scss';
 
 const TitleBar = () => {
   return (
     <div className="titleBar">
-      <div className='titleText'>Synergy Starter App</div>
+      <div className="titleText">Synergy Starter App</div>
     </div>
-  )
-}
+  );
+};
 
-export default TitleBar
+export default TitleBar;

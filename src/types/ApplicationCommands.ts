@@ -1,6 +1,6 @@
-import Greeting from "./Greeting"
+import Greeting from './Greeting';
 
 export default interface ApplicationCommands {
-  showMessage: (greeting: Greeting) => void
-  closeMessage: (instance: string) => void
+  showMessage: (greeting: Greeting) => void;
+  closeMessage: (instance: string) => void;
 }

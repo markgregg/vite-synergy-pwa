@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import Greeting from '../../types/Greeting';
 
 export interface GreetingState {
@@ -8,8 +8,8 @@ const initialState: GreetingState = {
   greeting: {
     recipient: 'A Friend',
     sender: 'Another friend',
-    message: 'Hello'
-  }
+    message: 'Hello',
+  },
 };
 
 export const GreetingSlice = createSlice({
@@ -17,11 +17,11 @@ export const GreetingSlice = createSlice({
   initialState,
   reducers: {
     updateGreeting: (state, action: PayloadAction<Greeting>) => {
-      state.greeting = action.payload
+      state.greeting = action.payload;
     },
   },
-})
+});
 
-export const { updateGreeting } = GreetingSlice.actions
+export const { updateGreeting } = GreetingSlice.actions;
 
-export default GreetingSlice.reducer
+export default GreetingSlice.reducer;
