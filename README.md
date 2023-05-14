@@ -1,11 +1,11 @@
 <p align="center">
   <br>
-  <img width="400" src="./src/assets/logo.svg" alt="logo of viterts repository">
+  <img width="400" src="./src/assets/logo.png" alt="logo of viterts repository">
   <br>
   <br>
 </p>
 
-# Viterts
+# Vite Synergy PWA
 
 ## Features
 
@@ -13,20 +13,19 @@
 - [TypeScript](https://www.typescriptlang.org/) - more strict
 - [React Router](https://reactrouter.com/) - with lazy-loading / code-splitting use case
 - [Redux Toolkit](https://redux-toolkit.js.org/) - with async and sync use case
-- [Ant Design](https://ant.design/)
 - [Jest](https://jestjs.io/) with [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [ESLint](https://tailwindcss.com/) - with [airbnb](https://github.com/airbnb/javascript) and really [powerful configuration](./.eslintrc)
+- [ESLint](https://tailwindcss.com/) - Linting
 - [Prettier](https://prettier.io/) - with editor configuration [file](./.vscode/settings.json)
-- [SASS/SCSS](https://sass-lang.com/) with [CSS Modules](https://github.com/css-modules/css-modules)
-- [dotenv (.env)](https://github.com/motdotla/dotenv)
-- [editorconfig](https://editorconfig.org/)
-- JS/TS native fetch get/post/put/delete [helpers](./src/common/request.ts)
+- [SASS](https://sass-lang.com/) with [CSS Modules](https://github.com/css-modules/css-modules)
+- [Synergy](https://github.com/markgregg/pwa-synergy-api) - Naive PWA framework
+- [Umami](https://umami.is/docs/) - Open source Analytics
+
 
 ## Installation
 
 ```bash
-npx degit erdoganbulut/viterts my-viterts-app
-cd my-viterts-app
+npx degit markgregg/vite-synergy-pwa my-synergy-pwa
+cd my-synergy-pwa
 yarn # If you don't have yarn installed, run: npm install -g yarn
 ```
 
@@ -53,15 +52,11 @@ In the project directory, you can run:
 
 ##### `yarn lint`
 
-##### `yarn lint:ts`
-
-##### `yarn lint:eslint`
-
-##### `yarn format:ts`
+##### `yarn lint:fix`
 
 ##### `yarn format`
 
-##### `yarn format:check`
+##### `yarn prepare`
 
 ##### `yarn test`
 
@@ -75,16 +70,12 @@ Folder structure should look like this;
 src/
 ├── App.test.tsx
 ├── App.tsx
-├── main.tsx
+├── index.tsx
 ├── setupTests.ts
 ├── test-utils.ts
 ├── vite-env.d.ts
 ├── assets
-│   ├── %image%.jpg
 │   └── %icon%.svg
-├── common
-│   ├── request.ts
-│   └── %util_name%.ts
 ├── components
 │   ├── partials
 │   │   └── %ModuleName%
@@ -96,28 +87,18 @@ src/
 │           ├── %ParticalName%.tsx
 │           ├── %ParticalName%.test.tsx
 │           └── %ParticalName%.scss
-├── routes
-│   ├── %ModuleName%
-│   │   ├── index.tsx
-│   │   ├── index.scss
-│   │   ├── %ModuleRouteName%
-│   │   │   ├── index.tsx
-│   │   │   ├── %ModuleRouteName%.test.tsx
-│   │   │   └── %ModuleRouteName%.scss
-│   │   └── %ModuleRouteName%
-│   │       ├── index.tsx
-│   │       ├── %ModuleRouteName%.test.tsx
-│   │       └── %ModuleRouteName%.scss
-│   └── index.tsx (router)
+├── Configuration
+│   ├── request.ts
 ├── store
 │   ├── slices
 │   │   ├── %module-name%.slice.ts
 │   │   └── %module-name%.slice.ts
 │   ├── hooks.ts
 │   └── index.ts
-└── styles
+└── types
     ├── global.scss
     └── vendors.scss
+
 ```
 
 ### State Management

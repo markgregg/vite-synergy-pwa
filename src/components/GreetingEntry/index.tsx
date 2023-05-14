@@ -3,7 +3,7 @@ import { RootState } from '../../store';
 import { useSelector } from 'react-redux';
 import Greeting from '../../types/Greeting';
 import { updateGreeting } from '../../store/slices/greetingSlice';
-import '../../styles/greetingEntry.scss';
+import './GreetingEntry.scss';
 import ApplicationCommands from '../../types/ApplicationCommands';
 
 const GreetingEntry: FC<ApplicationCommands> = ({ showMessage }) => {

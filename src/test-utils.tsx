@@ -8,7 +8,9 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 const AllTheProviders: FC<{ children: React.ReactNode }> = ({ children }) => (
-  <Provider store={store}></Provider>
+  <Provider store={store}>
+    <div></div>
+  </Provider>
 );
 
 const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>) =>

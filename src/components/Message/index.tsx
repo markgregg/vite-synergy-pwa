@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Greeting from '../../types/Greeting';
-import '../../styles/message.scss';
+import './Message.scss';
 
 export interface MessageProps {
   instanceId: string;

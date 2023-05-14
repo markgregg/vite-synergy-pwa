@@ -3,7 +3,7 @@ import UniversalApp from 'pwa-synergy-api';
 import ApplicationCommands from './types/ApplicationCommands';
 import TitleBar from './components/TitleBar';
 import { components, routeCommands, windowsCommands, windowsLayout, routes } from './configuration';
-import './styles/app.scss';
+import './App.scss';
 
 const App = () => {
   return (
