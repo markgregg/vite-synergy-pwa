@@ -1,16 +1,17 @@
 import React, { FC } from 'react';
 import { RootState } from '../../store';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Greeting from '../../types/Greeting';
 import { updateGreeting } from '../../store/slices/greetingSlice';
 import './GreetingEntry.scss';
 import ApplicationCommands from '../../types/ApplicationCommands';
 
 const GreetingEntry: FC<ApplicationCommands> = ({ showMessage }) => {
+  const dispatch = useDispatch();
   const greeting = useSelector((state: RootState) => state.greeting);
 
   const update = (greeting: Greeting) => {
-    updateGreeting(greeting);
+    dispatch(updateGreeting(greeting));
   };
 
   const sendMessage = () => {

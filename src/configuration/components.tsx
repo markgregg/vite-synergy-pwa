@@ -1,7 +1,8 @@
+import React from 'react';
 import { Component } from 'pwa-synergy-api';
 import ApplicationCommands from '../types/ApplicationCommands';
 import GreetingEntry from '../components/GreetingEntry';
-import Message, { MessageProps } from '../components/Message';
+import Message from '../components/Message';
 
 const components: Component<ApplicationCommands>[] = [
   {
