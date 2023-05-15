@@ -13,10 +13,9 @@ const windowsLayout: AppLayout = {
   },
   componentGroups: [
     {
-      id: 'onlyWindow',
+      id: 'floatingWindow',
       floatable: 'singleTab',
       newWindow: true,
-      disableDock: true,
       preferredFloatHeight: [275, 275],
       preferredFloatWidth: [352, 352],
     },
