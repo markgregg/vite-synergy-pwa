@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img width="400" src="./src/assets/logo.png" alt="logo of viterts repository">
+  <img width="400" src="./public/logo.png" alt="logo of viterts repository">
   <br>
   <br>
 </p>
@@ -12,7 +12,8 @@
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/) - more strict
 - [React Router](https://reactrouter.com/) - with lazy-loading / code-splitting use case
-- [Redux Toolkit](https://redux-toolkit.js.org/) - with async and sync use case
+- [Redux Toolkit](https://redux-toolkit.js.org/) - self-explanatory 
+- [redux-persist](https://github.com/rt2zz/redux-persist) - persist state across page changes
 - [Jest](https://jestjs.io/) with [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [ESLint](https://tailwindcss.com/) - Linting
 - [Prettier](https://prettier.io/) - with editor configuration [file](./.vscode/settings.json)
@@ -35,10 +36,11 @@ When you use this template, try follow the checklist to update your info properl
 
 - [ ] Rename `name` and `author` fields in `package.json`
 - [ ] Change the author name in `LICENSE`
+- [ ] update manifest file in `public`
+- [ ] Change the icon and logo in `public`
 - [ ] Change the title in `index.html`
-- [ ] Change the favicon and logo in `src/assets`
-- [ ] Remove dummy code and components
-- [ ] Clean up the README's
+- [ ] Remove example components
+- [ ] Modify the readme for your app
 
 ## Available Scripts
 
@@ -121,7 +123,3 @@ The project has a strong linter configuration to ensure consistency and maintain
 
 All components in the project are created as functional component. Continuity should be ensured by not using class components unless needed.
 
-## Contributors
-
-[Erdoğan BULUT](https://github.com/erdoganbulut/)
-[Ömer AYYILDIZ](https://github.com/omerayyildiz)
